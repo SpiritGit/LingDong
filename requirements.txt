@@ -12,3 +12,5 @@ foxglove-schemas-protobuf==0.1.0
 PyAudio==0.2.14
 SpeechRecognition==3.10.4
 edge-tts==6.1.9
+
+black==24.3.0
