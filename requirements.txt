@@ -8,3 +8,7 @@ opencv-python-headless==4.8.0.74
 
 # Foxglove 协议支持 (用于方案 B 的叠罗汉可视化)
 foxglove-schemas-protobuf==0.1.0
+
+PyAudio==0.2.14
+SpeechRecognition==3.10.4
+edge-tts==6.1.9
