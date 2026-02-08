@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package lingdong_msgs;
+
+message AudioResult {
+    string text = 1;
+    float confidence = 2;
+    int64 timestamp = 3;
+}

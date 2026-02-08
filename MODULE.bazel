@@ -1,0 +1,24 @@
+module(
+    name = "lingdong",
+    version = "0.1",
+)
+
+# 按照刚才报错中提示的“resolved dependency graph”版本填入
+bazel_dep(name = "rules_python", version = "1.7.0") 
+bazel_dep(name = "rules_proto", version = "7.1.0")
+bazel_dep(name = "protobuf", version = "29.0", repo_name = "com_google_protobuf")
+
+# 以下保持不变...
+python = use_extension("@rules_python//python/extensions:python.bzl", "python")
+python.toolchain(
+    python_version = "3.10.12",
+    is_default = True,
+)
+
+pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
+pip.parse(
+    hub_name = "py_deps",
+    python_version = "3.10.12",
+    requirements_lock = "//:requirements.txt",
+)
+use_repo(pip, "py_deps")

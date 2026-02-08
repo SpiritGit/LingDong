@@ -1,8 +1,0 @@
-syntax = "proto3";
-package lingdong_msgs;
-
-message AudioResult {
-    string text = 1;        // 识别到的文本
-    float confidence = 2;   // 置信度
-    int64 timestamp = 3;    // 时间戳
-}

@@ -1,3 +1,11 @@
+/bazel-*
+# === ROS 2 (Colcon) ===
+/build/
+/install/
+/log/
+# 忽略 colcon 生成的忽略文件标识
+COLCON_IGNORE
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

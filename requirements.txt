@@ -3,7 +3,7 @@ requests==2.31.0
 urllib3==2.0.7
 
 # 视觉与科学计算
-numpy==1.24.3
+numpy>=1.24.0
 opencv-python-headless==4.8.0.74
 
 # Foxglove 协议支持 (用于方案 B 的叠罗汉可视化)
@@ -15,4 +15,3 @@ edge-tts==6.1.9
 
 websockets==12.0
 pyaudio==0.2.14
-numpy>=1.24.0
